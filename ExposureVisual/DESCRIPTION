@@ -1,0 +1,23 @@
+Package: ExposureVisual
+Type: Package
+Title: Heatmap visualization of mutational signatures exposure of tumors genomes
+    from MPF file
+Version: 0.99.0
+Depends: R(>= 3.6)
+Imports: decompTumor2Sig, RColorBrewer, grDevices, pheatmap
+Suggests: knitr, rmarkdown, BiocStyle, BSgenome.Hsapiens.UCSC.hg19
+Authors@R: person(given = "Veronica", family = "Erconi", role = c("aut", "cre"),
+    email = "erconi.veronica@gmail.com")
+Description: Uses decomposeTumorGenomes() function of decompTumor2Sig to 
+    determine the contributions of mutation frequencies obtained with 
+    readGenomesFromMPF() decompTumor2Sig function according to a specific 
+    model of mutational signatures (Alexandrov or Shiraishi) in a set of tumor 
+    genomes from a MPF (mutation position format) file. The resulting 
+    contributions are then hierarchically clustered and visualized as a heatmap.
+License: GPL-2
+Encoding: UTF-8
+biocViews: Software, Exposures, Genetics, BiomedicalInformatics, 
+    SomaticMutations, Visualization
+VignetteBuilder: knitr
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
